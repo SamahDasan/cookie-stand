@@ -25,28 +25,25 @@ const Seattle = {
     maxCust: 65, 
     avg: 6.3, 
     resultArray: [],
-    
+    total:0,
     info: function () {
-        let sum=0;    
         document.getElementById('head1').textContent=this.shopName;
         let numOfCookies; 
-        for (i = 0; i <= houresArray.length; i++) {
+        for (i = 0; i < houresArray.length; i++) {
             numOfCookies = generateRandomNumber(this.minCust, this.maxCust) * this.avg;
             this.resultArray.push(Math.ceil(numOfCookies));
+            this.total +=this.resultArray[i];
+
            const liElement=document.createElement('li');
            ulElement.appendChild(liElement);
            liElement.textContent = houresArray[i]+':'+ this.resultArray[i];
-          sum=sum+this.resultArray[i];
            
-          //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
+           //sum=sum+resultArray[i];
+            //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
         }
-       /* const liElementTotal=createElement('li');
-        ulElement.appendChild(liElementTotal);        
-        liElementTotal.textContent='Total'+' '+ sum;       
-        */
-        /*let liElementsum=document.createElement('li');
+        const liElementsum=document.createElement('li');
         ulElement.appendChild(liElementsum);
-        liElementsum.textContent= 'Total ' +' '+sum;*/
+        liElementsum.textContent= 'Total : '+' '+ this.total+'cookies';
     }
 }
 
@@ -64,18 +61,24 @@ const Tokyo = {
     maxCust: 24, 
     avg: 1.2, 
     resultArray: [],
+    total:0,
     info: function () {
         document.getElementById('head2').textContent=this.shopName;
         let numOfCookies;
-        for (i = 0; i <= houresArray.length; i++) {
+        for (i = 0; i < houresArray.length; i++) {
             numOfCookies = generateRandomNumber(this.minCust, this.maxCust) * this.avg;
             this.resultArray.push(Math.ceil(numOfCookies));
-           const liElement2=document.createElement('li');
+            this.total +=this.resultArray[i];
+
+            const liElement2=document.createElement('li');
            ulElement2.appendChild(liElement2);
            liElement2.textContent = houresArray[i]+':'+ this.resultArray[i];
             //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
 
         }
+        const liElementsum2=document.createElement('li');
+        ulElement2.appendChild(liElementsum2);
+        liElementsum2.textContent= 'Total : '+' '+ this.total+'cookies';
     }
 }
 
@@ -92,19 +95,26 @@ const Dubai = {
     minCust: 11, 
     maxCust: 38, 
     avg: 3.7, 
+    total:0,
+
     resultArray: [],
     info: function () {
         document.getElementById('head3').textContent=this.shopName;
         let numOfCookies;
-        for (i = 0; i <= houresArray.length; i++) {
+        for (i = 0; i < houresArray.length; i++) {
             numOfCookies = generateRandomNumber(this.minCust, this.maxCust) * this.avg;
             this.resultArray.push(Math.ceil(numOfCookies));
-           const liElement3=document.createElement('li');
+            this.total +=this.resultArray[i];
+
+            const liElement3=document.createElement('li');
            ulElement3.appendChild(liElement3);
            liElement3.textContent = houresArray[i]+':'+ this.resultArray[i];
             //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
 
         }
+        const liElementsum3=document.createElement('li');
+        ulElement3.appendChild(liElementsum3);
+        liElementsum3.textContent= 'Total : '+' '+ this.total+'cookies';
     }
 }
 
@@ -121,19 +131,26 @@ const Paris = {
     minCust: 20, 
     maxCust: 38, 
     avg: 2.3, 
+    total:0,
+
     resultArray: [],
     info: function () {
         document.getElementById('head4').textContent=this.shopName;
         let numOfCookies;
-        for (i = 0; i <= houresArray.length; i++) {
+        for (i = 0; i < houresArray.length; i++) {
             numOfCookies = generateRandomNumber(this.minCust, this.maxCust) * this.avg;
             this.resultArray.push(Math.ceil(numOfCookies));
-           const liElement4=document.createElement('li');
+            this.total +=this.resultArray[i];
+
+            const liElement4=document.createElement('li');
            ulElement4.appendChild(liElement4);
            liElement4.textContent = houresArray[i]+':'+ this.resultArray[i];
             //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
 
         }
+        const liElementsum4=document.createElement('li');
+        ulElement4.appendChild(liElementsum4);
+        liElementsum4.textContent= 'Total : '+' '+ this.total+'cookies';
     }
 }
 
@@ -150,19 +167,26 @@ const Lima = {
     minCust: 2, 
     maxCust: 16, 
     avg: 4.6, 
+    total:0,
+
     resultArray: [],
     info: function () {
         document.getElementById('head5').textContent=this.shopName;
         let numOfCookies;
-        for (i = 0; i <= houresArray.length; i++) {
+        for (i = 0; i < houresArray.length; i++) {
             numOfCookies = generateRandomNumber(this.minCust, this.maxCust) * this.avg;
             this.resultArray.push(Math.ceil(numOfCookies));
-           const liElement5=document.createElement('li');
+            this.total +=this.resultArray[i];
+
+            const liElement5=document.createElement('li');
            ulElement5.appendChild(liElement5);
            liElement5.textContent = houresArray[i]+':'+ this.resultArray[i];
             //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
 
         }
+        const liElementsum5=document.createElement('li');
+        ulElement5.appendChild(liElementsum5);
+        liElementsum5.textContent= 'Total : '+' '+ this.total+'cookies';
     }
 }
 
