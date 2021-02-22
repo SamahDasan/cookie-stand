@@ -25,19 +25,25 @@ const Seattle = {
     maxCust: 65, 
     avg: 6.3, 
     resultArray: [],
+    
     info: function () {
+        let sum=0;    
         document.getElementById('head1').textContent=this.shopName;
-        let numOfCookies; //let sum=0;
+        let numOfCookies; 
         for (i = 0; i <= houresArray.length; i++) {
             numOfCookies = generateRandomNumber(this.minCust, this.maxCust) * this.avg;
             this.resultArray.push(Math.ceil(numOfCookies));
            const liElement=document.createElement('li');
            ulElement.appendChild(liElement);
            liElement.textContent = houresArray[i]+':'+ this.resultArray[i];
-           //sum=sum+resultArray[i];
-            //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
-
+          sum=sum+this.resultArray[i];
+           
+          //  ulElement.ulElement='${houresArray[i]} :  ${this.resultArray[i]} months old';
         }
+       /* const liElementTotal=createElement('li');
+        ulElement.appendChild(liElementTotal);        
+        liElementTotal.textContent='Total'+' '+ sum;       
+        */
         /*let liElementsum=document.createElement('li');
         ulElement.appendChild(liElementsum);
         liElementsum.textContent= 'Total ' +' '+sum;*/
