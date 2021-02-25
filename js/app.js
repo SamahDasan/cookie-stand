@@ -81,8 +81,15 @@ th3.textContent= Seattle.hoursTotal+Tokyo.hoursTotal+Paris.hoursTotal+Dubai.hour
 }
 
 
+const formElement=document.getElementById('myForm');
+formElement.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const shopName=event.target.name.value;
+    const minCust=event.target.min.value;
+    const maxCust=event.target.max.value;
+    const avg = event.target.avg.value;
 
-
+});
 const Seattle= new Shop(23,40,3.2);
 Seattle.header();
 Seattle.render();
