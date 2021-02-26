@@ -1,5 +1,4 @@
 # cookie-stand
 
 
-[sales.html](https://samahdasan.github.io/cookie-stand/sales.html)
-[index.html](https://samahdasan.github.io/cookie-stand/index.html)
+[Cookie-stand](https://github.com/SamahDasan/cookie-stand/blob/main/index.html)
