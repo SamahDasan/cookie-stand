@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Salmon Cookies</title>
+  <title>Branches</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-    <body>
-        <header >
-              
-        </header>
-        <main>  
-            <img/>
-            <h1 id ="head1"></h1>
-            <article id="article1">
-                <ul></ul>
-            </article>
-           
+<body>
+  <header>
+    <img src="img/salmon.png" alt="logo">
+    <h1>Sales data</h1>
+    <a href="index.html"> Home</a>
+  </header>
+  <hr>
+  <main>
 
-            <h1 id ="head2"></h1>
-            <article id="article2">
-                <ul></ul>
-            </article>
-           
-            <h1 id ="head3"></h1>
-            <article id="article3">
-                <ul></ul>
-            </article>
+    <form id="addNewShop">
+      <fieldset>
+        <legend>Add new shop:</legend>
 
-            <h1 id ="head4"></h1>
-            <article id="article4">
-                <ul></ul>
-            </article>
+        <label for="shopLocation">Location</label>
+        <input type="text" name="shopLocation" id="shopLocation">
+
+        <label for="shopMinCustomers">Min.Customers</label>
+        <input type="number" name="shopMinCustomers" id="shopMinCustomers">
+
+        <label for="shopMaxCustomers">Max.Customers</label>
+        <input type="number" name="shopMaxCustomers" id="shopMaxCustomers">
+
+        <label for="shopAvgCookieSale">avg. Cookie Sale</label>
+        <input type="number" name="shopAvgCookieSale" id="shopAvgCookieSale" step="0.01">
+
+        <button type="submit">ADD SHOP</button>
+
+      </fieldset>
+    </form>
 
 
-            <h1 id ="head5"></h1>
-            <article id="article5">
-                <ul></ul>
-            </article>
-        </main>
-    </body>
-    <script src="js/app.js"></script>
+
+    <div id = "shops">
+
+    </div>
+
+  </main>
+  <hr>
+  <footer>
+      <h5>All Right Reserved 2021&copy; </h5>
+
+       </footer>
+  <script src="js/app.js"></script>
+</body>
 </html>
